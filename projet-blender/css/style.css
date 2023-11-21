@@ -1,0 +1,269 @@
+/* BULLES DE DIALOGUE */
+#talkbubble {
+	  z-index: 1;
+	  animation-duration: 10s;
+      animation-name: slideInLeft;
+	  margin: 30px;
+      width: 545px;
+      height: 130px;
+      background: white;
+      position: absolute;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+	  cursor: default;
+	  font-family: 'Arial';
+	  padding: 20px;
+	  font-size: 30px;
+	  line-height: 45px;
+}
+
+#talkbubble:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 26px;
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-right: 26px solid white;
+      border-bottom: 13px solid transparent;
+}
+
+
+/* BUREAU MODALES*/
+
+#myModal, #myModal2, #myModal3, #myModal4, #myModal5, #myModal5-1, #myModal5-2, #myModal6, #myModal6-1,  #myModal6-2, #myModal7, #myModal8, #myModal9, #myModal10, #myModal11, #myModal12, #myModal13{
+	animation-duration: 3s;
+    animation-name: bounceInDown;
+	position:absolute;
+	margin: 9% 25%;
+	width: 50%;
+}
+
+.modal-content {
+	background: url('../images/alerte.jpg') no-repeat center center;
+	background-size: cover;
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px black;
+}
+
+.modal-content2 {
+	background: url('../images/question.jpg') no-repeat center center;
+	background-size: cover;
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px black;
+}
+
+.modal-content3 {
+	background: url('../images/commentaire.jpg') no-repeat center center;
+	background-size: cover;
+	border: 2px solid black;
+	box-shadow: 2px 2px 2px black;
+}
+
+.modal-body {
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.modal-body p {
+	color: black;
+	font-size: 80px;
+	font-family: 'Arial';
+	margin:10px;
+	border: 1px solid black;
+	background-color: white;
+	padding: 0px 10px;
+	box-shadow: 5px 5px 5px black;
+	cursor: pointer;
+}
+
+.modal-body p:hover {
+	box-shadow: 0px 0px 0px;
+}
+
+.modal-header, .modal-body {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal-header p {
+	color: black;
+	margin: auto;
+    font-size: 80px;
+	font-family: 'Times New Roman';
+	text-align: center;
+}
+
+.modal-header .close {
+	font-size: 40px;
+	cursor: pointer;
+}
+
+textarea {
+	width: 440px;
+	margin: 10px;
+}
+
+
+/* BUREAU ETAPES */
+
+#et0 img {
+	animation-duration: 3s;
+    animation-name: tada;
+	animation-iteration-count: infinite;
+	position:absolute;
+	margin: 6% 39%;
+}
+
+#et1, #et2, #et3, #et4, #et5 {
+	animation-duration: 3s;
+    animation-name: fadeIn;
+	position: absolute;
+	margin-top: 10%;
+    margin-left: 25%;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carre {
+	cursor: pointer;
+	animation-duration: 3s;
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	width: 150px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 10px black;
+}
+
+.rond {
+	cursor: pointer;
+	animation-duration: 3s;
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	width: 150px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 10px black;
+	border-radius: 100px;
+}
+
+.rect {
+	cursor: pointer;
+	animation-duration: 3s;
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	width: 150px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 10px black;
+}
+
+.ovale {
+	cursor: pointer;
+	animation-duration: 3s;
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	width: 150px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px 15px 10px black;
+	border-radius: 100px;
+}	
+
+#et2 img, #et5 img {
+	cursor: pointer;
+	animation-duration: 3s;
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	width: 200px;
+}
+
+.typo {
+	cursor: pointer;
+	animation-duration: 3s;
+    animation-name: bounce;
+	animation-iteration-count: infinite;
+	font-size: 40px;
+	text-shadow: 3px 3px 8px black;
+}
+
+.arial {
+	font-family: 'Arial';
+}
+
+.times {
+	font-family: 'Times New Roman';
+}
+
+.roboto {
+	font-family: 'Roboto';
+}
+
+.freestyle {
+	font-family: 'Freestyle Script';
+}
+
+
+.taille {
+	cursor: pointer;
+	animation-duration: 3s;
+    animation-name: bounce;
+	animation-iteration-count: infinite;
+	font-family: 'Freestyle Script';
+	text-shadow: 3px 3px 8px black;
+}
+
+.grande {
+	font-size: 150px;
+}
+
+.moyenne {
+	font-size: 100px;
+}
+
+.petite {
+	font-size: 70px;
+}
+
+.minuscule {
+	font-size: 50px;
+}
+
+.recommencer, .sortir {
+	animation-duration: 3s;
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	position: absolute;
+	margin-top: 10%;
+    margin-left: 25%;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+	font-size: 80px;
+	border: 5px solid #000052;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Freestyle Script';
+	cursor: pointer;
+	box-shadow: 5px 5px 15px 10px black;
+}
+
+.recommencer p, .sortir p {
+	text-align: center;
+	margin: auto;
+}
+
+.sortir {
+	margin-top: 20% !important;
+}
+
+
+a {
+	text-decoration: none;
+    color: unset;
+}
